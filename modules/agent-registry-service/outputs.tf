@@ -28,3 +28,19 @@ output "update_time" {
   description = "The timestamp when the resource was updated."
   value       = google_agent_registry_service.this.update_time
 }
+
+output "agent" {
+  description = "Details of the Agent configuration."
+  value       = length(google_agent_registry_service.this.agent_spec) > 0 ? google_agent_registry_service.this.agent_spec[0] : null
+}
+
+output "mcp_server" {
+  description = "Details of the MCP Server configuration."
+  value       = length(google_agent_registry_service.this.mcp_server_spec) > 0 ? google_agent_registry_service.this.mcp_server_spec[0] : null
+}
+
+output "endpoint" {
+  description = "Details of the Endpoint configuration."
+  value       = length(google_agent_registry_service.this.endpoint_spec) > 0 ? google_agent_registry_service.this.endpoint_spec[0] : null
+}
+
