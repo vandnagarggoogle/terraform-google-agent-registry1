@@ -1,0 +1,43 @@
+apiVersion: blueprints.cloud.google.com/v1alpha1
+kind: BlueprintMetadata
+metadata:
+  name: terraform-google-agent-registry-agent-registry-service-display
+  annotations:
+    config.kubernetes.io/local-config: "true"
+spec:
+  info:
+    title: Agent Registry Service
+    source:
+      repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry.git
+      sourceType: git
+      dir: /modules/agent-registry-service
+  ui:
+    input:
+      variables:
+        agent_spec:
+          name: agent_spec
+          title: Agent Spec
+        description:
+          name: description
+          title: Description
+        display_name:
+          name: display_name
+          title: Display Name
+        endpoint_spec:
+          name: endpoint_spec
+          title: Endpoint Spec
+        interfaces:
+          name: interfaces
+          title: Interfaces
+        location:
+          name: location
+          title: Location
+        mcp_server_spec:
+          name: mcp_server_spec
+          title: Mcp Server Spec
+        project_id:
+          name: project_id
+          title: Project Id
+        service_id:
+          name: service_id
+          title: Service Id

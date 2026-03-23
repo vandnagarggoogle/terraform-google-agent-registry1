@@ -1,0 +1,52 @@
+apiVersion: blueprints.cloud.google.com/v1alpha1
+kind: BlueprintMetadata
+metadata:
+  name: terraform-google-agent-registry
+  annotations:
+    config.kubernetes.io/local-config: "true"
+spec:
+  info:
+    title: terraform-google-agent-registry
+    source:
+      repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry.git
+      sourceType: git
+    description:
+      tagline: This is an auto-generated module.
+      detailed: "This module was generated from "
+      preDeploy: To deploy this blueprint you must have an active billing account and billing permissions.
+    icon: assets/icon.png
+    costEstimate:
+      description: Blueprint cost details
+      url: https://cloud.google.com/products/calculator?id=02fb0c45-cc29-4567-8cc6-f72ac9024add
+  content:
+    architecture:
+      diagramUrl: https://www.link-to-architecture-diagram.com
+      description:
+        - 1. Architecture description step no. 1
+        - 2. Architecture description step no. 2
+        - 3. Architecture description step no. N
+    documentation:
+      - title: Hosting a Static Website
+        url: https://cloud.google.com/storage/docs/hosting-static-website
+    subBlueprints:
+      - name: agent-registry-agent
+        location: modules/agent-registry-agent
+      - name: agent-registry-endpoint
+        location: modules/agent-registry-endpoint
+      - name: agent-registry-mcp-server
+        location: modules/agent-registry-mcp-server
+      - name: agent-registry-service
+        location: modules/agent-registry-service
+    examples:
+      - name: simple_example
+        location: examples/simple_example
+  interfaces: {}
+  requirements:
+    roles:
+      - level: Project
+        roles:
+          - roles/owner
+    services:
+      - cloudresourcemanager.googleapis.com
+      - storage-api.googleapis.com
+      - serviceusage.googleapis.com

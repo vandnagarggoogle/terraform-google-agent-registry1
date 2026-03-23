@@ -30,3 +30,9 @@ variable "filter" {
   type        = string
   default     = null
 }
+
+variable "mcp_server_id" {
+  description = "The system-generated ID for an MCP server (e.g., agentregistry-0000...)."
+  type        = string
+  default     = null
+}

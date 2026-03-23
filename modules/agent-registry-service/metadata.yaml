@@ -1,0 +1,96 @@
+apiVersion: blueprints.cloud.google.com/v1alpha1
+kind: BlueprintMetadata
+metadata:
+  name: terraform-google-agent-registry-agent-registry-service
+  annotations:
+    config.kubernetes.io/local-config: "true"
+spec:
+  info:
+    title: Agent Registry Service
+    source:
+      repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry.git
+      sourceType: git
+      dir: /modules/agent-registry-service
+    version: 0.0.1
+    actuationTool:
+      flavor: Terraform
+      version: ">= 0.13"
+    description: {}
+    icon: assets/icon.png
+  content:
+    examples:
+      - name: simple_example
+        location: examples/simple_example
+  interfaces:
+    variables:
+      - name: project_id
+        description: The project ID to deploy to.
+        varType: string
+        required: true
+      - name: location
+        description: The location of the resource.
+        varType: string
+        required: true
+      - name: service_id
+        description: The name of the service.
+        varType: string
+        required: true
+      - name: display_name
+        description: User-defined display name for the Service (max 63 characters).
+        varType: string
+      - name: description
+        description: The description of the service.
+        varType: string
+      - name: interfaces
+        description: The connection details for the Service.
+        varType: |-
+          list(object({
+              url              = string
+              protocol_binding = string # JSONRPC, GRPC, or HTTP_JSON
+            }))
+        defaultValue: []
+      - name: agent_spec
+        description: The spec of the Agent. Mutually exclusive with mcp_server_spec and endpoint_spec.
+        varType: |-
+          object({
+              type    = string # NO_SPEC or A2A_AGENT_CARD
+              content = string # JSON format content
+            })
+      - name: mcp_server_spec
+        description: The spec of the MCP Server. Mutually exclusive with agent_spec and endpoint_spec.
+        varType: |-
+          object({
+              type    = string # NO_SPEC or TOOL_SPEC
+              content = string # JSON format content
+            })
+      - name: endpoint_spec
+        description: The spec of the Endpoint. Mutually exclusive with agent_spec and mcp_server_spec.
+        varType: |-
+          object({
+              type = string # NO_SPEC
+            })
+    outputs:
+      - name: agent
+        description: Details of the Agent configuration.
+      - name: create_time
+        description: The timestamp when the resource was created.
+      - name: endpoint
+        description: Details of the Endpoint configuration.
+      - name: id
+        description: The ID of the Agent Registry Service.
+      - name: mcp_server
+        description: Details of the MCP Server configuration.
+      - name: update_time
+        description: The timestamp when the resource was updated.
+  requirements:
+    roles:
+      - level: Project
+        roles:
+          - roles/owner
+    services:
+      - cloudresourcemanager.googleapis.com
+      - storage-api.googleapis.com
+      - serviceusage.googleapis.com
+    providerVersions:
+      - source: hashicorp/google-beta
+        version: ">= 7.21.0"

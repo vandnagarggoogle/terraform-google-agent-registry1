@@ -25,7 +25,13 @@ variable "location" {
 }
 
 variable "filter" {
-  description = "A filter string to find the Endpoint 
+  description = "A filter string to find the Endpoint"
+  type        = string
+  default     = null
+}
+
+variable "endpoint_id" {
+  description = "The system-generated ID for a generic endpoint."
   type        = string
   default     = null
 }

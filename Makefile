@@ -92,4 +92,10 @@ docker_generate_metadata:
 
 # Alias for backwards compatibility
 .PHONY: generate_docs
-generate_docs: docker_generate_docs
+generate_docs: 
+	docker run --rm -it \
+		-e ENABLE_BPMETADATA=1 \
+		-v "$(CURDIR)":/workspace \
+		gcr.io/cloud-foundation-cicd/cft/developer-tools:1 \
+		/bin/bash -c "source /usr/local/bin/task_helper_functions.sh && cd /workspace && generate_docs"
+

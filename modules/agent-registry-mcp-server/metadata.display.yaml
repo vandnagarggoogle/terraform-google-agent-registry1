@@ -1,0 +1,28 @@
+apiVersion: blueprints.cloud.google.com/v1alpha1
+kind: BlueprintMetadata
+metadata:
+  name: terraform-google-agent-registry-agent-registry-mcp-server-display
+  annotations:
+    config.kubernetes.io/local-config: "true"
+spec:
+  info:
+    title: Agent Registry MCP Server
+    source:
+      repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry.git
+      sourceType: git
+      dir: /modules/agent-registry-mcp-server
+  ui:
+    input:
+      variables:
+        filter:
+          name: filter
+          title: Filter
+        location:
+          name: location
+          title: Location
+        mcp_server_id:
+          name: mcp_server_id
+          title: Mcp Server Id
+        project_id:
+          name: project_id
+          title: Project Id

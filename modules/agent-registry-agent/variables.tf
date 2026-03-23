@@ -29,3 +29,9 @@ variable "filter" {
   type        = string
   default     = null
 }
+
+variable "agent_id" {
+  description = "The system-generated ID for a registered agent."
+  type        = string
+  default     = null
+}
