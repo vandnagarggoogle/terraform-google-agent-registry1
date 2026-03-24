@@ -32,5 +32,3 @@ spec:
           visibility: VISIBILITY_ROOT
         mcp_server_id:
           visibility: VISIBILITY_ROOT
-        mcp_server_interfaces:
-          visibility: VISIBILITY_ROOT

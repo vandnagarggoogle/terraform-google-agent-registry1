@@ -26,3 +26,7 @@ spec:
         project_id:
           name: project_id
           title: Project Id
+    runtime:
+      outputs:
+        endpoint_display_name:
+          visibility: VISIBILITY_ROOT
