@@ -23,6 +23,7 @@ Use this data source to retrieve the `mcp_server_id` required for identity-aware
 | mcp\_server\_attributes | Attributes associated with the MCP Server. |
 | mcp\_server\_description | The description of the MCP Server. |
 | mcp\_server\_display\_name | The display name of the MCP Server. |
+| mcp\_server\_id | The unique identifier for the MCP server. |
 | mcp\_server\_interfaces | The connection details (URL and protocol binding) for the MCP Server. |
 | mcp\_server\_tools | The list of tools available with the MCP Server, including their names, descriptions, and annotations. |
 
