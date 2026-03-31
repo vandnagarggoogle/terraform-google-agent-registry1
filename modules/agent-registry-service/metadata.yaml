@@ -11,7 +11,7 @@ spec:
       repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry.git
       sourceType: git
       dir: /modules/agent-registry-service
-    version: 0.0.14
+    version: 0.0.15
     actuationTool:
       flavor: Terraform
       version: ">= 0.13"
@@ -94,7 +94,7 @@ spec:
               source: github.com/vandnagarggoogle/terraform-google-agent-registry//modules/agent-registry-agent
               version: ">= v0.0.8"
             spec:
-              outputExpr: '{"type": "AGENT_SPEC", "content": agent_id}'
+              outputExpr: '{"type": "A2A_AGENT_CARD", "content": agent_id}'
       - name: mcp_server_spec
         description: The spec of the MCP Server. Mutually exclusive with agent_spec and endpoint_spec.
         varType: |-
@@ -129,7 +129,7 @@ spec:
               source: github.com/vandnagarggoogle/terraform-google-agent-registry//modules/agent-registry-endpoint
               version: ">= v0.0.8"
             spec:
-              outputExpr: '{"type": "ENDPOINT_SPEC", "content": endpoint_id}'
+              outputExpr: '{"type": "NO_SPEC"}'
     outputs:
       - name: agent
         description: Details of the Agent configuration.
