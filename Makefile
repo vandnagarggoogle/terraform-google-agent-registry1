@@ -97,7 +97,7 @@ docker_generate_metadata:
 
 # Alias for backwards compatibility
 .PHONY: generate_docs
-generate_docs: 
+generate_docs:
 	docker run --rm -it \
 		-e ENABLE_BPMETADATA=1 \
 		-v "$(CURDIR)":/workspace \
