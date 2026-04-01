@@ -43,4 +43,3 @@ output "endpoint" {
   description = "Details of the Endpoint configuration."
   value       = length(google_agent_registry_service.this.endpoint_spec) > 0 ? google_agent_registry_service.this.endpoint_spec[0] : null
 }
-

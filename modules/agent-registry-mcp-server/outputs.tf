@@ -41,6 +41,5 @@ output "mcp_server_attributes" {
 
 output "mcp_server_id" {
   description = "The unique identifier for the MCP server."
-  # Ensure "default" matches the local name used in your main.tf
   value       = data.google_agent_registry_mcp_server.default.mcp_server_id
 }

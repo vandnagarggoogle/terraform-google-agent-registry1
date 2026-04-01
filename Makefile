@@ -103,9 +103,3 @@ generate_docs:
 		-v "$(CURDIR)":/workspace \
 		gcr.io/cloud-foundation-cicd/cft/developer-tools:1 \
 		/bin/bash -c "source /usr/local/bin/task_helper_functions.sh && cd /workspace && generate_docs"
-
-# Root Makefile
-.PHONY: test_integration
-test_integration:
-	@echo "Running Integration Tests..."
-	cd test/integration && go mod tidy && go test -v ./... -timeout 30m

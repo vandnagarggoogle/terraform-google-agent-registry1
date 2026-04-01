@@ -44,7 +44,7 @@ output "last_updated" {
   value       = data.google_agent_registry_agent.default.update_time
 }
 
-output "agent_id"{
+output "agent_id" {
   description = "The agent id."
   value       = data.google_agent_registry_agent.default.agent_id
 }

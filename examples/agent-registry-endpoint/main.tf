@@ -15,7 +15,7 @@
  */
 
 module "service_prereq" {
-  source     = "../../modules/agent-registry-service"
+  source     = "vandnagarggoogle/agent-registry/google//modules/agent-registry-service"
   project_id = var.project_id
   location   = "us-central1"
   service_id = "test-endpoint-${var.random_string}"
@@ -25,7 +25,7 @@ module "service_prereq" {
 }
 
 module "endpoint_data" {
-  source      = "../../modules/agent-registry-endpoint"
+  source      = "vandnagarggoogle/agent-registry/google//modules/agent-registry-endpoint"
   project_id  = var.project_id
   location    = "us-central1"
   endpoint_id = module.service_prereq.service_id
