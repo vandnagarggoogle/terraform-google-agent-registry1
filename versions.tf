@@ -40,8 +40,4 @@ terraform {
   provider_meta "google-beta" {
     module_name = "blueprints/terraform/terraform-google-agent-registry/v0.1.0"
   }
-
-  provider_meta "google-nightly" {
-    module_name = "blueprints/terraform/terraform-google-agent-registry/v0.1.0"
-  }
 }
