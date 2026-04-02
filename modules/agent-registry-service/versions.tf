@@ -29,7 +29,7 @@ terraform {
     # Match the google-nightly version used in the root versions.tf
     google-nightly = {
       source  = "hashicorp/google-nightly"
-      version = ">= 2026.3.26-7.25.0"
+      version = "2026.3.26-7.25.0"
     }
   }
 
@@ -37,10 +37,6 @@ terraform {
     module_name = "blueprints/terraform/terraform-google-agent-registry:agent-registry-service/v0.1.0"
   }
   provider_meta "google-beta" {
-    module_name = "blueprints/terraform/terraform-google-agent-registry:agent-registry-service/v0.1.0"
-  }
-
-  provider_meta "google-nightly" {
     module_name = "blueprints/terraform/terraform-google-agent-registry:agent-registry-service/v0.1.0"
   }
 }
