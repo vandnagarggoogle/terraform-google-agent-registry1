@@ -48,3 +48,9 @@ output "display_name" {
   description = "The user-defined display name of the service."
   value       = google_agent_registry_service.this.display_name
 }
+
+output "discovery_filter" {
+  description = "A pre-formatted filter string for discovery modules."
+  # Construct the string here so Terraform handles the escaping and module prefixing
+  value       = "displayName=\"${google_agent_registry_service.this.display_name}\""
+}

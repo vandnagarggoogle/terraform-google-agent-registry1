@@ -59,3 +59,5 @@ spec:
       outputs:
         id:
           visibility: VISIBILITY_ROOT
+        display_name:
+          visibility: VISIBILITY_ROOT

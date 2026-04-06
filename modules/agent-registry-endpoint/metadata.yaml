@@ -58,7 +58,7 @@ spec:
               source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
               version: ">= v0.0.8"
             spec:
-              outputExpr: 'format("displayName=\"%s\"", display_name)'
+              outputExpr: discovery_filter
       - name: endpoint_id
         description: The system-generated ID for a generic endpoint.
         varType: string

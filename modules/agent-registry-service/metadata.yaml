@@ -137,6 +137,9 @@ spec:
       - name: display_name
         description: The user-defined display name.
         type: string
+      - name: discovery_filter
+        description: The filter string for finding this service.
+        type: string
   requirements:
     roles:
       - level: Project
