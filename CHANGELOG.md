@@ -8,6 +8,14 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 This changelog is generated automatically based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.1.4](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.1.3...v0.1.4) (2026-04-06)
+
+
+### Bug Fixes
+
+* dispalyname ([75b584c](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/75b584ce149fc2fe84f16fc019f3639f1b4b689c))
+* dispalyname ([fbfc703](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/fbfc70346c6b9a6e35feb78298e9938ef195817b))
+
 ## [0.1.3](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.1.2...v0.1.3) (2026-04-06)
 
 
