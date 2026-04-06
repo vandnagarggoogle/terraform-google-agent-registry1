@@ -54,16 +54,15 @@ spec:
       - name: filter
         description: A filter string to find the Agent (e.g., 'display_name="my-agent"').
         varType: string
-      - name: agent_id
-        description: The system-generated ID for a registered agent.
-        varType: string
         connections:
           - source:
               source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
               version: ">= v0.0.8"
             spec:
-              outputExpr: id
-              inputPath: agent_id
+              outputExpr: 'displayName:"${display_name}"'
+      - name: agent_id
+        description: The system-generated ID for a registered agent.
+        varType: string
     outputs:
       - name: agent_display_name
         description: The display name of the Agent.

@@ -52,18 +52,16 @@ spec:
         varType: string
         required: true
       - name: filter
-        description: A filter string to find the Endpoint
-        varType: string
-      - name: endpoint_id
-        description: The system-generated ID for a generic endpoint.
         varType: string
         connections:
           - source:
               source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
               version: ">= v0.0.8"
             spec:
-              outputExpr: id
-              inputPath: endpoint_id
+              outputExpr: 'displayName:"${display_name}"'
+      - name: endpoint_id
+        description: The system-generated ID for a generic endpoint.
+        varType: string
     outputs:
       - name: endpoint_attributes
         description: Custom attributes associated with the endpoint.
