@@ -8,6 +8,15 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 This changelog is generated automatically based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.1.5](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.1.4...v0.1.5) (2026-04-06)
+
+
+### Bug Fixes
+
+* adding connection with filter with display nmae ([eaf6369](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/eaf6369bbea29c0f8754555eeda081e89311416e))
+* adding connection with filter with display nmae ([c7a929a](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/c7a929a3158ddf9c191edc33d6372651cc4e9b41))
+* adding connection with filter with display nmae ([da5ea99](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/da5ea995d2175d0ec0948b55ba53449d9f1d4142))
+
 ## [0.1.4](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.1.3...v0.1.4) (2026-04-06)
 
 
