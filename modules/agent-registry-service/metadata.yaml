@@ -134,6 +134,9 @@ spec:
         description: Details of the MCP Server configuration.
       - name: update_time
         description: The timestamp when the resource was updated.
+      - name: display_name
+        description: The user-defined display name.
+        type: string
   requirements:
     roles:
       - level: Project

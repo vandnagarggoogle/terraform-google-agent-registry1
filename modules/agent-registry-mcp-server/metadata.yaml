@@ -59,7 +59,7 @@ spec:
               source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
               version: ">= v0.0.8"
             spec:
-              outputExpr: 'displayName:"${display_name}"'
+              outputExpr: '"displayName=\"" + display_name + "\""'
       - name: mcp_server_id
         description: The system-generated ID for an MCP server (e.g., agentregistry-0000...).
         varType: string

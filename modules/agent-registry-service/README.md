@@ -27,6 +27,7 @@ Refer to the root module for end-to-end integration examples including Agent Eng
 |------|-------------|
 | agent | Details of the Agent configuration. |
 | create\_time | The timestamp when the resource was created. |
+| display\_name | The user-defined display name of the service. |
 | endpoint | Details of the Endpoint configuration. |
 | id | The ID of the Agent Registry Service. |
 | mcp\_server | Details of the MCP Server configuration. |
