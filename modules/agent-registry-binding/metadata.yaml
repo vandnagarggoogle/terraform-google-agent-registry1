@@ -11,7 +11,7 @@ spec:
       repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry1.git
       sourceType: git
       dir: /modules/agent-registry-binding
-    version: 0.1.6
+    version: 0.1.7
     description: {}
     icon: assets/icon.png
   content:
@@ -51,6 +51,7 @@ spec:
         connections:
           - source:
               source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-agent
+              version: ">= v0.0.8"
             spec:
               outputExpr: agent_urn
       - name: target_identifier
@@ -60,14 +61,17 @@ spec:
         connections:
           - source:
               source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-agent
+              version: ">= v0.0.8"
             spec:
               outputExpr: agent_urn
           - source:
               source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-mcp-server
+              version: ">= v0.0.8"
             spec:
               outputExpr: mcp_server_urn
           - source:
               source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-endpoint
+              version: ">= v0.0.8"
             spec:
               outputExpr: endpoint_urn
       - name: auth_provider
@@ -76,7 +80,7 @@ spec:
         required: true
         connections:
           - source:
-              source: github.com/GoogleCloudPlatform/terraform-google-iam_connector
+              source: github.com/GoogleCloudPlatform/terraform-google-iam-connectors-service
             spec:
               outputExpr: id
     outputs:
