@@ -101,5 +101,5 @@ generate_docs:
 	docker run --rm -it \
 		-e ENABLE_BPMETADATA=1 \
 		-v "$(CURDIR)":/workspace \
-		gcr.io/cloud-foundation-cicd/cft/developer-tools:1 \
+		$(REGISTRY_URL)/${DOCKER_IMAGE_DEVELOPER_TOOLS}:${DOCKER_TAG_VERSION_DEVELOPER_TOOLS} \
 		/bin/bash -c "source /usr/local/bin/task_helper_functions.sh && cd /workspace && generate_docs"

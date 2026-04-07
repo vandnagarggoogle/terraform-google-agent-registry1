@@ -1,0 +1,103 @@
+apiVersion: blueprints.cloud.google.com/v1alpha1
+kind: BlueprintMetadata
+metadata:
+  name: agent-registry-binding
+  annotations:
+    config.kubernetes.io/local-config: "true"
+spec:
+  info:
+    title: Agent Registry Binding
+    source:
+      repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry.git
+      sourceType: git
+      dir: /modules/agent-registry-binding
+    description: {}
+    icon: assets/icon.png
+  content:
+    examples:
+      - name: agent-registry-agent
+        location: examples/agent-registry-agent
+      - name: agent-registry-endpoint
+        location: examples/agent-registry-endpoint
+      - name: agent-registry-mcp-server
+        location: examples/agent-registry-mcp-server
+      - name: agent-registry-service
+        location: examples/agent-registry-service
+  interfaces:
+    variables:
+      - name: project_id
+        description: The ID of the project in which the resource belongs.
+        varType: string
+        required: true
+      - name: location
+        description: The location of the binding resource.
+        varType: string
+        required: true
+      - name: binding_id
+        description: The unique ID for the binding.
+        varType: string
+        required: true
+      - name: display_name
+        description: User-defined display name for the Binding.
+        varType: string
+      - name: description
+        description: The description of the Binding.
+        varType: string
+      - name: source_identifier
+        description: "The identifier of the source Agent. Format: urn:agent:{publisher}:{namespace}:{name}"
+        varType: string
+        required: true
+        connections:
+          - source:
+              source: github.com/vandnagarggoogle/terraform-google-agent-registry//modules/agent-registry-agent
+            spec:
+              outputExpr: agent_urn
+      - name: target_identifier
+        description: The identifier of the target Agent, MCP Server, or Endpoint.
+        varType: string
+        required: true
+        connections:
+          - source:
+              source: github.com/vandnagarggoogle/terraform-google-agent-registry//modules/agent-registry-agent
+            spec:
+              outputExpr: agent_urn
+          - source:
+              source: github.com/vandnagarggoogle/terraform-google-agent-registry//modules/agent-registry-mcp-server
+            spec:
+              outputExpr: mcp_server_urn
+          - source:
+              source: github.com/vandnagarggoogle/terraform-google-agent-registry//modules/agent-registry-endpoint
+            spec:
+              outputExpr: endpoint_urn
+      - name: auth_provider
+        description: The resource name of the target auth provider (e.g., from an IAM Connector).
+        varType: string
+        required: true
+        connections:
+          - source:
+              source: github.com/Daisyprakash/terraform-google-iam_connector
+            spec:
+              outputExpr: id
+    outputs:
+      - name: create_time
+        description: The timestamp marking the initial creation of the Binding resource.
+        type: string
+      - name: id
+        description: An identifier for the resource with format projects/{{project}}/locations/{{location}}/bindings/{{binding_id}}
+        type: string
+      - name: name
+        description: "The resource name of the Binding. Format: projects/{project}/locations/{location}/bindings/{binding}"
+        type: string
+      - name: update_time
+        description: The timestamp of the last update to the Binding resource.
+        type: string
+  requirements:
+    roles:
+      - level: Project
+        roles:
+          - roles/agentregistry.admin
+          - roles/iam.serviceAccountUser
+    services:
+      - agentregistry.googleapis.com
+      - apphub.googleapis.com
+      - aiplatform.googleapis.com
