@@ -48,3 +48,8 @@ output "endpoint_id" {
   description = "The enpoint id."
   value       = data.google_agent_registry_endpoint.default.endpoint_id
 }
+
+output "endpoint_urn" {
+  description = "The globally unique URN for the endpoint."
+  value       = data.google_agent_registry_endpoint.default.urn
+}

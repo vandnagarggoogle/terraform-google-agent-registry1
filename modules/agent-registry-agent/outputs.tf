@@ -48,3 +48,8 @@ output "agent_id" {
   description = "The agent id."
   value       = data.google_agent_registry_agent.default.agent_id
 }
+
+output "agent_urn" {
+  description = "The globally unique URN for the agent."
+  value       = data.google_agent_registry_agent.default.urn
+}

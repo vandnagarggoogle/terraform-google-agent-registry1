@@ -22,7 +22,7 @@ spec:
   info:
     title: Agent Registry Endpoint
     source:
-      repo: https://github.com/GoogleCloudPlatform/terraform-google-agent-registry.git
+      repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry1.git
       sourceType: git
       dir: /modules/agent-registry-endpoint
     version: 0.1.5
@@ -77,6 +77,9 @@ spec:
         description: The connection details (URL and protocol binding) for the Endpoint.
       - name: endpoint_update_time
         description: The timestamp when the endpoint was last updated.
+      - name: endpoint_urn
+        description: The logical URN of the endpoint.
+        type: string
   requirements:
     roles:
       - level: Project

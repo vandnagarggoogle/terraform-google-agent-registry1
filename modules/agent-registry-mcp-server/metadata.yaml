@@ -22,7 +22,7 @@ spec:
   info:
     title: Agent Registry MCP Server
     source:
-      repo: https://github.com/GoogleCloudPlatform/terraform-google-agent-registry.git
+      repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry1.git
       sourceType: git
       dir: /modules/agent-registry-mcp-server
     version: 0.1.5
@@ -76,6 +76,9 @@ spec:
         description: The connection details (URL and protocol binding) for the MCP Server.
       - name: mcp_server_tools
         description: The list of tools available with the MCP Server, including their names, descriptions, and annotations.
+      - name: mcp_server_urn
+        description: The logical URN of the MCP server.
+        type: string
   requirements:
     roles:
       - level: Project

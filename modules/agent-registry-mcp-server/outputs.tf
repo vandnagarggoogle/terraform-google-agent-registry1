@@ -43,3 +43,8 @@ output "mcp_server_id" {
   description = "The unique identifier for the MCP server."
   value       = data.google_agent_registry_mcp_server.default.mcp_server_id
 }
+
+output "mcp_server_urn" {
+  description = "The globally unique URN for the MCP server."
+  value       = data.google_agent_registry_mcp_server.default.urn
+}
