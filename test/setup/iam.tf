@@ -23,12 +23,18 @@ locals {
     "roles/networkservices.admin",
     "roles/networksecurity.admin",
     "roles/serviceusage.serviceUsageAdmin"
+    "roles/apphub.admin"
   ]
 
   # Module-specific IAM specifications
   per_module_roles = {
     # Agent Registry Service: Requires Admin access for resource provisioning
     agent-registry-service = concat(local.base_roles, [
+      "roles/agentregistry.admin"
+    ]),
+
+    # Agent Registry Binding: Requires Admin access for lifecycle management
+    agent-registry-binding = concat(local.base_roles, [
       "roles/agentregistry.admin"
     ]),
 
