@@ -25,7 +25,7 @@ spec:
       repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry1.git
       sourceType: git
       dir: /modules/agent-registry-agent
-    version: 0.1.7
+    version: 0.1.8
     actuationTool:
       flavor: Terraform
       version: ">= 0.13"
@@ -60,6 +60,12 @@ spec:
               version: ">= v0.0.8"
             spec:
               outputExpr: discovery_filter
+          - source:
+              source: github.com/GoogleCloudPlatform/terraform-google-vertex-ai//modules/agent-engine
+              version: ">= v4.0.1"
+            spec:
+              outputExpr: 'attributes."agentregistry.googleapis.com/system/RuntimeReference".uri:"//aiplatform.googleapis.com/${reasoning_engine_name}"'
+              inputPath: filter
       - name: agent_id
         description: The system-generated ID for a registered agent.
         varType: string
