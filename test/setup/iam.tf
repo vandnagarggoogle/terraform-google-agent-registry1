@@ -22,7 +22,7 @@ locals {
     "roles/storage.admin",
     "roles/networkservices.admin",
     "roles/networksecurity.admin",
-    "roles/serviceusage.serviceUsageAdmin"
+    "roles/serviceusage.serviceUsageAdmin",
     "roles/apphub.admin"
   ]
 
