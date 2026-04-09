@@ -84,14 +84,11 @@ spec:
             spec:
               outputExpr: id
     outputs:
-      - name: create_time
-        description: The timestamp marking the initial creation of the Binding resource.
-        type: string
       - name: id
         description: An identifier for the resource with format projects/{{project}}/locations/{{location}}/bindings/{{binding_id}}
         type: string
-      - name: update_time
-        description: The timestamp of the last update to the Binding resource.
+      - name: binding_id
+        description: The binding id.
         type: string
   requirements:
     roles:

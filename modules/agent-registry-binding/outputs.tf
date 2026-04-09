@@ -19,6 +19,11 @@ output "id" {
   value       = google_agent_registry_binding.this.id
 }
 
+output "binding_id" {
+  description = "The binding id."
+  value       = google_agent_registry_binding.this.binding_id
+}
+
 output "create_time" {
   description = "The timestamp marking the initial creation of the Binding resource."
   value       = google_agent_registry_binding.this.create_time
