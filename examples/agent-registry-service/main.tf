@@ -17,7 +17,7 @@
 # examples/agent-registry-service/main.tf
 
 module "agent_registry_service" {
-  source     = "vandnagarggoogle/agent-registry1/google//modules/agent-registry-service"
+  source     = "../../modules/agent-registry-service"
   project_id = var.project_id
   location   = "us-central1"
   service_id = "test-service-${var.random_string}"

@@ -16,7 +16,7 @@
 
 # Example configuration for testing the MCP Server module
 module "mcp_server" {
-  source     = "vandnagarggoogle/agent-registry1/google//modules/agent-registry-mcp-server"
+  source     = "../../modules/agent-registry-mcp-server"
   project_id = var.project_id
   location   = "us-central1"
 
