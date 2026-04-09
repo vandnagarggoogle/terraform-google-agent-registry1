@@ -90,9 +90,6 @@ spec:
       - name: id
         description: An identifier for the resource with format projects/{{project}}/locations/{{location}}/bindings/{{binding_id}}
         type: string
-      - name: name
-        description: "The resource name of the Binding. Format: projects/{project}/locations/{location}/bindings/{binding}"
-        type: string
       - name: update_time
         description: The timestamp of the last update to the Binding resource.
         type: string

@@ -19,11 +19,6 @@ output "id" {
   value       = google_agent_registry_binding.this.id
 }
 
-output "name" {
-  description = "The resource name of the Binding. Format: projects/{project}/locations/{location}/bindings/{binding}"
-  value       = google_agent_registry_binding.this.name
-}
-
 output "create_time" {
   description = "The timestamp marking the initial creation of the Binding resource."
   value       = google_agent_registry_binding.this.create_time

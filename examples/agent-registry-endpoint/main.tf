@@ -15,7 +15,7 @@
  */
 
 module "endpoint_data" {
-  source      = "../../modules/agent-registry-endpoint"
+  source      = "vandnagarggoogle/agent-registry1/google//modules/agent-registry-endpoint"
   project_id  = var.project_id
   location    = "us-central1"
   endpoint_id = "endpoint-id"

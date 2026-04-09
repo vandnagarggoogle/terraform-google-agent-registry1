@@ -15,7 +15,7 @@
  */
 
 module "agent_data" {
-  source     = "../../modules/agent-registry-agent"
+  source     = "vandnagarggoogle/agent-registry1/google//modules/agent-registry-agent"
   project_id = var.project_id
   location   = "us-central1"
   agent_id   = "existing-test-agent"
