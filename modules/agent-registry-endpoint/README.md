@@ -27,5 +27,6 @@ This data source supports filtering by `displayName` or `endpoint_id` to resolve
 | endpoint\_id | The enpoint id. |
 | endpoint\_interfaces | The connection details (URL and protocol binding) for the Endpoint. |
 | endpoint\_update\_time | The timestamp when the endpoint was last updated. |
+| endpoint\_urn | The globally unique URN for the endpoint. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

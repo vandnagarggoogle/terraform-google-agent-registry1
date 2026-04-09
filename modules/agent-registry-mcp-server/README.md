@@ -26,5 +26,6 @@ Use this data source to retrieve the `mcp_server_id` required for identity-aware
 | mcp\_server\_id | The unique identifier for the MCP server. |
 | mcp\_server\_interfaces | The connection details (URL and protocol binding) for the MCP Server. |
 | mcp\_server\_tools | The list of tools available with the MCP Server, including their names, descriptions, and annotations. |
+| mcp\_server\_urn | The globally unique URN for the MCP server. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

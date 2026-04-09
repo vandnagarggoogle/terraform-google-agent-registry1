@@ -25,6 +25,7 @@ Use this module to resolve the SPIFFE ID and endpoint details for Agent-to-Agent
 | agent\_id | The agent id. |
 | agent\_protocols | The connection details and interfaces for the Agent. |
 | agent\_skills | The list of skills and capabilities defined for the Agent. |
+| agent\_urn | The globally unique URN for the agent. |
 | agent\_version | The version of the Agent. |
 | last\_updated | The last time the agent metadata was updated. |
 

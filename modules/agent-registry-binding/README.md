@@ -32,9 +32,9 @@ module "agent_registry_binding" {
 
 | Name | Description |
 |------|-------------|
+| binding\_id | The binding id. |
 | create\_time | The timestamp marking the initial creation of the Binding resource. |
 | id | An identifier for the resource with format projects/{{project}}/locations/{{location}}/bindings/{{binding\_id}} |
-| name | The resource name of the Binding. Format: projects/{project}/locations/{location}/bindings/{binding} |
 | update\_time | The timestamp of the last update to the Binding resource. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
