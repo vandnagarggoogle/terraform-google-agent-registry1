@@ -5,7 +5,7 @@ This module provisions and manages a Google Agent Registry Binding, which create
 ## Usage
 
 module "agent_registry_binding" {
-  source            = "github.com/vandnagarggoogle/terraform-google-agent-registry//modules/agent-registry-binding"
+  source            = "github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-binding"
   project_id        = var.project_id
   location          = "us-central1"
   binding_id        = "my-binding"

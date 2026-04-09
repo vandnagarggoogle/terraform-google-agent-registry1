@@ -8,10 +8,10 @@ spec:
   info:
     title: Agent Registry Binding
     source:
-      repo: https://github.com/vandnagarggoogle/terraform-google-agent-registry1.git
+      repo: https://github.com/GoogleCloudPlatform/terraform-google-agent-registry.git
       sourceType: git
       dir: /modules/agent-registry-binding
-    version: 0.1.7
+    version: 0.1.5
     description: {}
     icon: assets/icon.png
   content:
