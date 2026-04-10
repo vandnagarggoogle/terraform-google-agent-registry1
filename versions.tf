@@ -34,10 +34,10 @@ terraform {
   }
 
   provider_meta "google" {
-    module_name = "blueprints/terraform/terraform-google-agent-registry/v0.1.5"
+    module_name = "blueprints/terraform/terraform-google-agent-registry/v0.2.0"
   }
 
   provider_meta "google-beta" {
-    module_name = "blueprints/terraform/terraform-google-agent-registry/v0.1.5"
+    module_name = "blueprints/terraform/terraform-google-agent-registry/v0.2.0"
   }
 }

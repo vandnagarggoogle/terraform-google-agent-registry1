@@ -8,6 +8,14 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 This changelog is generated automatically based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.2.0](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.1.5...v0.2.0) (2026-04-09)
+
+
+### Features
+
+* adding new component for agent registry binding ([bf9be35](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/bf9be3546750ddc1beaf9c19e6e292266d735659))
+* agent registry binding add ([823e2b4](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/823e2b41cf32e01489c53a431ce9ceac5df08ded))
+
 ## [0.1.5](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.1.4...v0.1.5) (2026-04-06)
 
 
