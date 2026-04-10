@@ -21,6 +21,7 @@ module "agent_registry_service" {
   project_id = var.project_id
   location   = "us-central1"
   service_id = "test-service-${var.random_string}"
+  display_name = "test-service-${var.random_string}"
   interfaces = [
   { "protocol_binding" = "HTTP_JSON", "url" = "https://api.stripe.com" }]
   endpoint_spec = {

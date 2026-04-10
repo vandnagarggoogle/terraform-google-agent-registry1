@@ -32,7 +32,6 @@ variable "service_id" {
 variable "display_name" {
   description = "User-defined display name for the Service (max 63 characters)."
   type        = string
-  default     = null
 }
 
 variable "description" {

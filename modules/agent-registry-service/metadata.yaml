@@ -58,6 +58,7 @@ spec:
       - name: display_name
         description: User-defined display name for the Service (max 63 characters).
         varType: string
+        required: true
       - name: description
         description: The description of the service.
         varType: string

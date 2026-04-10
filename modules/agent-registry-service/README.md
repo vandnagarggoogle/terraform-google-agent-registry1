@@ -13,7 +13,7 @@ Refer to the root module for end-to-end integration examples including Agent Eng
 |------|-------------|------|---------|:--------:|
 | agent\_spec | The spec of the Agent. Mutually exclusive with mcp\_server\_spec and endpoint\_spec. | <pre>object({<br>    type    = string # NO_SPEC or A2A_AGENT_CARD<br>    content = string # JSON format content<br>  })</pre> | `null` | no |
 | description | The description of the service. | `string` | `null` | no |
-| display\_name | User-defined display name for the Service (max 63 characters). | `string` | `null` | no |
+| display\_name | User-defined display name for the Service (max 63 characters). | `string` | n/a | yes |
 | endpoint\_spec | The spec of the Endpoint. Mutually exclusive with agent\_spec and mcp\_server\_spec. | <pre>object({<br>    type = string # NO_SPEC<br>  })</pre> | `null` | no |
 | interfaces | The connection details for the Service. | <pre>list(object({<br>    url              = string<br>    protocol_binding = string # JSONRPC, GRPC, or HTTP_JSON<br>  }))</pre> | `[]` | no |
 | location | The location of the resource. | `string` | n/a | yes |
