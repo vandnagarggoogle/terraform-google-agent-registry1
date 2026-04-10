@@ -90,12 +90,6 @@ spec:
               type    = string # NO_SPEC or A2A_AGENT_CARD
               content = string # JSON format content
             })
-        connections:
-          - source:
-              source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
-              version: ">= v0.0.8"
-            spec:
-              outputExpr: agent
       - name: mcp_server_spec
         description: The spec of the MCP Server. Mutually exclusive with agent_spec and endpoint_spec.
         varType: |-
@@ -103,24 +97,12 @@ spec:
               type    = string # NO_SPEC or TOOL_SPEC
               content = string # JSON format content
             })
-        connections:
-          - source:
-              source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
-              version: ">= v0.0.8"
-            spec:
-              outputExpr: mcp_server
       - name: endpoint_spec
         description: The spec of the Endpoint. Mutually exclusive with agent_spec and mcp_server_spec.
         varType: |-
           object({
               type = string # NO_SPEC
             })
-        connections:
-          - source:
-              source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
-              version: ">= v0.0.8"
-            spec:
-              outputExpr: endpoint
     outputs:
       - name: agent
         description: Details of the Agent configuration.
