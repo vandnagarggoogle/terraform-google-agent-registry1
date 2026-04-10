@@ -100,7 +100,7 @@ spec:
               source: github.com/GoogleCloudPlatform/terraform-google-iam-connectors-service
               version: ">= 0.0.1"
             spec:
-              outputExpr: id
+              outputExpr: connector_id
     outputs:
       - name: id
         description: An identifier for the resource with format projects/{{project}}/locations/{{location}}/bindings/{{binding_id}}
