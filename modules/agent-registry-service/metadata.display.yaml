@@ -61,3 +61,5 @@ spec:
           visibility: VISIBILITY_ROOT
         display_name:
           visibility: VISIBILITY_ROOT
+        discovery_filter:
+          visibility: VISIBILITY_ROOT
