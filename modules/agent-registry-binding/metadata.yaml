@@ -114,10 +114,12 @@ spec:
         roles:
           - roles/agentregistry.admin
           - roles/iam.serviceAccountUser
+          - roles/agentregistry.admin
     services:
       - agentregistry.googleapis.com
       - apphub.googleapis.com
       - aiplatform.googleapis.com
+      - iam.googleapis.com
     providerVersions:
       - source: hashicorp/google
         version: ">= 6.6.0, < 8"

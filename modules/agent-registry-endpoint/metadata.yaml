@@ -90,6 +90,7 @@ spec:
           - roles/networkservices.admin
           - roles/networksecurity.admin
           - roles/serviceusage.serviceUsageAdmin
+          - roles/agentregistry.admin
     services:
       - agentregistry.googleapis.com
       - apphub.googleapis.com

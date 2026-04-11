@@ -134,6 +134,7 @@ spec:
           - roles/storage.admin
           - roles/networkservices.admin
           - roles/networksecurity.admin
+          - roles/agentregistry.admin
           - roles/serviceusage.serviceUsageAdmin
     services:
       - agentregistry.googleapis.com
