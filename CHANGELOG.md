@@ -8,6 +8,13 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 This changelog is generated automatically based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.2.5](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.4...v0.2.5) (2026-04-13)
+
+
+### Bug Fixes
+
+* adding auth provider in binding ([d03d067](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/d03d0675bb35479174685ed0c0fafcf0174faa5e))
+
 ## [0.2.4](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.3...v0.2.4) (2026-04-11)
 
 
