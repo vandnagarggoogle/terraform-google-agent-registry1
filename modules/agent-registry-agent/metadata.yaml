@@ -66,6 +66,12 @@ spec:
             spec:
               outputExpr: discovery_filter
               inputPath: filter
+          - source:
+              source: github.com/GoogleCloudPlatform/terraform-google-vertex-ai//modules/agent-engine-nightly
+              version: ">= 5.1.0"
+            spec:
+              outputExpr: discovery_filter
+              inputPath: filter
       - name: agent_id
         description: The system-generated ID for a registered agent.
         varType: string
