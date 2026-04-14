@@ -8,6 +8,14 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 This changelog is generated automatically based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.2.6](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.5...v0.2.6) (2026-04-14)
+
+
+### Bug Fixes
+
+* add nightly connection ([f746a04](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/f746a048cac617d27ed9fd131f9b1a9c2429151c))
+* add nightly connection ([6461d2e](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/6461d2edc2e78d9baf2df047f8ebae785f666f68))
+
 ## [0.2.5](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.4...v0.2.5) (2026-04-13)
 
 
