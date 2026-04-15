@@ -45,7 +45,7 @@ output "mcp_server_id" {
     data.google_agent_registry_mcp_server.default.mcp_server_id,
     basename(data.google_agent_registry_mcp_server.default.id)
   )
-  
+
   depends_on = [
     data.google_agent_registry_mcp_server.default
   ]
