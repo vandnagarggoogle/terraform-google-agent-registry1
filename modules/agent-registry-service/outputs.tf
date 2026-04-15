@@ -55,5 +55,5 @@ output "display_name" {
 
 output "discovery_filter" {
   description = "A pre-formatted filter string for discovery modules."
-  value       = "mcpServerId:\"urn:mcp:projects-${data.google_project.project.number}:projects:${data.google_project.project.number}:locations:${var.agent-registry-service-1_location}:agentregistry:services:${basename(module.agent-registry-service-1.id)}\""
+  value       = "mcpServerId:\"urn:mcp:projects-${data.google_project.project.number}:projects:${data.google_project.project.number}:locations:${var.agent-registry-service-1_location}:agentregistry:services:${basename(google_agent_registry_service.this.id)}\""
 }
