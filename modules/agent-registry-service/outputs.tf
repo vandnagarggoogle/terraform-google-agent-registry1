@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+data "google_project" "project" {
+  project_id = var.project_id
+}
+
 output "id" {
   description = "The ID of the Agent Registry Service."
   value       = google_agent_registry_service.this.id
@@ -51,5 +55,5 @@ output "display_name" {
 
 output "discovery_filter" {
   description = "A pre-formatted filter string for discovery modules."
-  value       = "displayName=\"${google_agent_registry_service.this.display_name}\""
+  value       = "mcpServerId:\"urn:mcp:projects-${data.google_project.project.number}:projects:${data.google_project.project.number}:locations:${var.location}:agentregistry:services:${basename(google_agent_registry_service.this.id)}\""
 }
