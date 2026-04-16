@@ -47,7 +47,7 @@ output "last_updated" {
 output "agent_id" {
   description = "The agent id."
   value = coalesce(
-    data.google_agent_registry_agent.default.mcp_server_id,
+    data.google_agent_registry_agent.default.agent_id,
     basename(data.google_agent_registry_agent.default.id)
   )
 
