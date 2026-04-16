@@ -46,7 +46,14 @@ output "endpoint_update_time" {
 
 output "endpoint_id" {
   description = "The enpoint id."
-  value       = data.google_agent_registry_endpoint.default.endpoint_id
+  value = coalesce(
+    data.google_agent_registry_endpoint.default.endpoint_id,
+    basename(data.google_agent_registry_endpoint.default.id)
+  )
+
+  depends_on = [
+    data.google_agent_registry_endpoint.default
+  ]
 }
 
 output "endpoint_urn" {

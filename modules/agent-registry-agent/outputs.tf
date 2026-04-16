@@ -46,7 +46,14 @@ output "last_updated" {
 
 output "agent_id" {
   description = "The agent id."
-  value       = data.google_agent_registry_agent.default.agent_id
+  value = coalesce(
+    data.google_agent_registry_agent.default.agent_id,
+    basename(data.google_agent_registry_agent.default.id)
+  )
+
+  depends_on = [
+    data.google_agent_registry_agent.default
+  ]
 }
 
 output "agent_urn" {
