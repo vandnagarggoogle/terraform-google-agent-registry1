@@ -8,6 +8,68 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 This changelog is generated automatically based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.2.10](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.9...v0.2.10) (2026-04-16)
+
+
+### Bug Fixes
+
+* adding op ([0834ea6](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/0834ea67dc216cef65fcfa677d6cdf26185f1fa9))
+
+## [0.2.9](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.8...v0.2.9) (2026-04-15)
+
+
+### Bug Fixes
+
+* depends_on ([fbed68f](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/fbed68f4b457c0b6678d823156c2b9ad9794506f))
+* depends_on ([b3281a8](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/b3281a8cd0a33185d72ede8b9457ddc2d22200e4))
+* depends_on ([5960d79](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/5960d797c2b4a4ef3007eb5e95430b141c881ccc))
+* depends_on ([ccbf8fe](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/ccbf8fe55be743ae639a0898c41fe590e853f670))
+
+## [0.2.8](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.7...v0.2.8) (2026-04-15)
+
+
+### Bug Fixes
+
+* depeds_on ([a42d06e](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/a42d06eaf8a45e4f1760d82727a50c8632d0090e))
+* depeds_on ([ef071d6](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/ef071d6bd08574b0994823f6b863bfa1fd8fbbb5))
+* depeds_on ([4fdc35d](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/4fdc35d57e0c047d7e63e149bf03a3011080f43e))
+* depeds_on ([5dc67d5](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/5dc67d54735408b0f2b9643ff1d60493cd023bca))
+
+## [0.2.7](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.6...v0.2.7) (2026-04-15)
+
+
+### Bug Fixes
+
+* adding output ([2b09d35](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/2b09d356561ce2e5bbe3d0ec2eba41c659b0b127))
+* adding output ([b069256](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/b069256b705b28ed8540fa375c9c6a7d2af4a3e6))
+* adding output ([f059989](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/f0599899cfcef942cf98c39724ce7d5e6a76b9e8))
+* adding output ([e2014a0](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/e2014a0f23ca3136ee45994ca68e59111c02ae12))
+* adding output ([e59a3b4](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/e59a3b4441bfe08056c6607966c81c5af4557177))
+
+## [0.2.6](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.5...v0.2.6) (2026-04-14)
+
+
+### Bug Fixes
+
+* add nightly connection ([f746a04](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/f746a048cac617d27ed9fd131f9b1a9c2429151c))
+* add nightly connection ([6461d2e](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/6461d2edc2e78d9baf2df047f8ebae785f666f68))
+
+## [0.2.5](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.4...v0.2.5) (2026-04-13)
+
+
+### Bug Fixes
+
+* adding auth provider in binding ([d03d067](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/d03d0675bb35479174685ed0c0fafcf0174faa5e))
+
+## [0.2.4](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.3...v0.2.4) (2026-04-11)
+
+
+### Bug Fixes
+
+* adding requred var ([0f96021](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/0f960211bb1896f34c6008ae3400803b84b4ba72))
+* adding roles and services ([5bf2b70](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/5bf2b705e2f04c93aa3d829b9d83e082beae1b87))
+* making default name required ([790037c](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/commit/790037c66d249d2548f91fb0595f5a870d9d9003))
+
 ## [0.2.3](https://github.com/GoogleCloudPlatform/terraform-google-agent-registry/compare/v0.2.2...v0.2.3) (2026-04-10)
 
 
