@@ -14,7 +14,7 @@ Use this data source to retrieve the `mcp_server_id` required for identity-aware
 | filter | A filter string to find the Mcp server | `string` | `null` | no |
 | location | The location of the Agent Registry resource (e.g., us-central1). | `string` | n/a | yes |
 | mcp\_server\_id | The system-generated ID for an MCP server (e.g., agentregistry-0000...). | `string` | `null` | no |
-| module\_depends\_on | A list of external resources or modules that this module should depend on. | `any` | `[]` | no |
+| module\_depends\_on | A list of external resources or modules that this module should depend on. | `list(string)` | `[]` | no |
 | project\_id | The ID of the project in which the resource belongs. | `string` | n/a | yes |
 
 ## Outputs

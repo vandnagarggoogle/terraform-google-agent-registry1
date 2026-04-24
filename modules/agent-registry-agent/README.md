@@ -14,7 +14,7 @@ Use this module to resolve the SPIFFE ID and endpoint details for Agent-to-Agent
 | agent\_id | The system-generated ID for a registered agent. | `string` | `null` | no |
 | filter | A filter string to find the Agent (e.g., 'display\_name="my-agent"'). | `string` | `null` | no |
 | location | The location of the Agent Registry resource (e.g., us-central1). | `string` | n/a | yes |
-| module\_depends\_on | A list of external resources or modules that this module should depend on. | `any` | `[]` | no |
+| module\_depends\_on | A list of external resources or modules that this module should depend on. | `list(string)` | `[]` | no |
 | project\_id | The ID of the project in which the resource belongs. | `string` | n/a | yes |
 
 ## Outputs
