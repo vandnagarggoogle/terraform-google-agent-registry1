@@ -72,7 +72,7 @@ spec:
               source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
               version: ">= 0.0.8"
             spec:
-              outputExpr: id
+              outputExpr: "[id]"
     outputs:
       - name: mcp_server_attributes
         description: Attributes associated with the MCP Server.

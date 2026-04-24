@@ -84,7 +84,7 @@ spec:
             source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
             version: ">= 0.0.8"
           spec:
-            outputExpr: id
+            outputExpr: "[id]"
     outputs:
       - name: agent_display_name
         description: The display name of the Agent.
